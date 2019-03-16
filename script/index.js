@@ -66,4 +66,6 @@ window.onload = function () {
   })
   timer = setInterval(play, timeout);
 
+  const menu = document.querySelector('')
+
 }

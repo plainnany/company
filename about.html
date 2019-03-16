@@ -14,27 +14,81 @@
 </head>
 
 <body>
-  <div class="wrap">
+  <div>
     <header>
-      <div class="logo">
+      <div class="logo wrap">
         <img src="./images/logo.jpg" alt="">
       </div>
       <div class="menu">
-        <ul class="nav">
-          <li><a href="/">网站首页</a></li>
-          <li><a href="/news/">新闻资讯</a></li>
-          <li><a href="/product/">产品展示</a></li>
-          <li><a href="/faq/">常见问题</a></li>
-          <li><a href="/about/">关于我们</a></li>
-          <li><a href="/contact/">联系我们</a></li>
+        <ul class="nav wrap">
+          <li><a href="./">网站首页</a></li>
+          <li><a href="/">新闻资讯</a></li>
+          <li><a href="./product.html">产品展示</a></li>
+          <li><a href="./faq.html">常见问题</a></li>
+          <li><a href="./about.html">关于我们</a></li>
+          <li><a href="./contact.html">联系我们</a></li>
         </ul>
       </div>
     </header>
-    <main>
-      about
+    <div id="slide">
+      <ul class="slide">
+        <li>
+          <a href="javascript:;">
+            <img src="./images/1.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="./images/2.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="./images/3.jpg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;">
+            <img src="./images/3.jpg" alt="">
+          </a>
+        </li>
+
+      </ul>
+      <span id="next"></span>
+      <span id="prev"></span>
+      <ul class="pagination">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <main class="wrap">
+      <div class="breadcrumb">
+        <a href="./index.html">首页</a> > 关于我们
+      </div>
+      <div class="description" style="text-indent: 2em">
+        新乡市牧畅畜牧环保设备有限公司位于美丽的中原地区河南新乡，
+        南临黄河，北依太行，是豫北地区重要的中心城市，经济发达，交通便利，
+        得天独厚的地理条件造就了勤劳的新乡人民！
+        牧畅畜牧环保设备有限公司始终秉持“用户至上、信誉优先”的原则服务广大用户，
+        我司主营各种畜牧环保设备，固液分离机、牛粪固液分离机、猪粪固液分离机、鸡粪固液分离机，翻耙机，型号齐全，种类繁多，质量有保证，
+        有意者欢迎电话咨询，更欢迎各位新老顾客来场亲自考察，牧畅畜牧期待与您的真诚合作！
+      </div>
     </main>
     <footer>
-      copyright
+      <div class="wrap footer">
+        <div class="qrcode">
+          <img src="./images/qrcode.jpg" />
+        </div>
+        <div class="text">
+          <p>新乡市牧畅畜牧环保设备有限公司 版权所有</p>
+          <p>地址：河南省新乡市卫辉市孙杏村镇孙杏村工业区001号</p>
+          <p>销售热线：13462386981, 18937387376</p>
+          <p>电话：13462386981, 18937387376</p>
+        </div>
+
+      </div>
     </footer>
   </div>
 </body>
