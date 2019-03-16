@@ -83,7 +83,6 @@ body {
   text-align: center;
   cursor: pointer;
   padding: 0 36px;
-
   transition: all .3s;
   color: #fff;
 }
@@ -91,7 +90,6 @@ body {
 .nav a {
   display: block;
   width: 100%;
-
 }
 
 .nav li:hover {}
@@ -124,7 +122,7 @@ body {
 
 #next, #prev {
   /* display: flex; */
-  display: none;  
+  display: none;
   justify-content: center;
   align-items: center;
   width: 50px;
@@ -286,12 +284,10 @@ body {
   flex-wrap: wrap;
 }
 
-@media (max-width: 599px) {
-
-}
+@media (max-width: 599px) {}
 
 .product-list li {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   border: 1px solid #f1f1f1;
   text-align: center;
   padding: 4px;
@@ -321,7 +317,6 @@ body {
   background: #f1f1f1;
   text-align: center;
   color: rgba(0, 0, 0, 0.75);
-  
 }
 
 .product-list p {
@@ -363,6 +358,14 @@ footer {
   font-size: 16px;
 }
 
+.description h3 {
+  text-align: center;
+}
+
+.description p {
+  margin: 12px 0;
+}
+
 .breadcrumb {
   padding: 20px 0 0;
   color: #999;
@@ -370,4 +373,55 @@ footer {
 
 .breadcrumb a {
   color: #000;
+}
+
+.product_detail {
+  width: 600px;
+  min-height: 400px;
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.product_detail .mask {
+  height: 70px;
+  line-height: 70px;
+  bottom: -2px;
+  font-size: 20px;
+}
+
+.product_detail img {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 599px) {
+  .product_detail {
+    width: 400px;
+  }
+}
+
+/* news */
+
+.news_list, .faq_list {
+  /* padding: 20px; */
+}
+
+.news_list li, .faq_list li {
+  line-height: 40px;
+  border-bottom: dashed 1px #ccc;
+  font-size: 14px;
+  background-image: url(../images/list-bg.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  padding-left: 20px;
+}
+
+.news_list .time, .faq_list .time {
+  float: right;
+  padding-right: 5px;
+  color: #ccc;
+}
+
+.news_list a:hover, .faq_list a:hover {
+  color: #ff6700;
 }
