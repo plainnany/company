@@ -66,8 +66,9 @@ window.onload = function () {
   })
   timer = setInterval(play, timeout);
 
+  const nav_bar = document.querySelector('.nav_bar')
   const menu = document.querySelector('.menu')
-  menu.addEventListener('click', function(){
+  nav_bar.addEventListener('click', function(){
     if (menu.className.indexOf('active') > -1) {
       menu.classList.remove('active')
     } else {
