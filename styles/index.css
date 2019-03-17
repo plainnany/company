@@ -43,12 +43,16 @@ body {
   display: block;
   width: 100%;
   z-index: 10;
-  background: #ccc;
+  background: #fff;
   padding: 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .menu.active .nav li:hover {
-  background: #000;
+  background: #f1f1f1;
+}
+.menu.active .nav li {
+  color: #000;
 }
 
 .menu.active::after {
@@ -158,15 +162,23 @@ body {
 }
 
 #slide .pagination li {
-  width: 32px;
-  height: 6px;
+  width: 14px;
+  height: 14px;
   margin: 0 8px;
   background: #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 50%;
+}
+
+@media (max-width: 599px) {
+  #slide .pagination li {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+  }
 }
 
 #slide .pagination li.active {
@@ -303,6 +315,7 @@ body {
   width: 250px;
   display: block;
   position: relative;
+  padding-bottom: 30px;
 }
 
 .product-list .mask {
@@ -397,6 +410,11 @@ footer {
 @media (max-width: 599px) {
   .product_detail {
     width: 400px;
+    min-height: auto;
+  }
+
+  .product_detail .mask {
+    display: none;
   }
 }
 

@@ -5,8 +5,8 @@ window.onload = function () {
     oSlide = document.querySelector('#slide'),
     slide = document.querySelector('.slide'),
     menuLi = document.querySelectorAll('.pagination>li');
-
-  const timeout = 3000
+  
+  const timeout = 2000;
   let index = 0;
   let w = oSlide.offsetWidth;
   let timer = null;
@@ -17,7 +17,7 @@ window.onload = function () {
 
   function play() {
     index++;
-    if (index === 4) {
+    if (index === 3) {
       index = 0;
     }
     slide.style.transform = 'translate(' + (-w * index) + 'px)';
@@ -36,7 +36,7 @@ window.onload = function () {
     clearInterval(timer);
     index--;
     if (index === -1) {
-      index = 3;
+      index = 2;
     }
     slide.style.transform = 'translate(' + (-w * index) + 'px)';
 
@@ -66,4 +66,12 @@ window.onload = function () {
   })
   timer = setInterval(play, timeout);
 
+  const menu = document.querySelector('.menu')
+  menu.addEventListener('click', function(){
+    if (menu.className.indexOf('active') > -1) {
+      menu.classList.remove('active')
+    } else {
+      menu.classList.add('active')
+    }
+  })
 }
