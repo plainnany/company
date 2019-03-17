@@ -425,6 +425,7 @@ footer {
 }
 
 .news_list li, .faq_list li {
+  position: relative;
   line-height: 40px;
   border-bottom: dashed 1px #ccc;
   font-size: 14px;
@@ -435,9 +436,10 @@ footer {
 }
 
 .news_list .time, .faq_list .time {
-  float: right;
-  padding-right: 5px;
+  position: absolute;
+  right: 0;
   color: #ccc;
+  font-size: 12px;
 }
 
 .news_list a:hover, .faq_list a:hover {
